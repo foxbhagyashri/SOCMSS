@@ -53,8 +53,8 @@ const CONTENT = {
   heroSub:
     "Applications Invited for SU-MAT 2027",
   para: "Applicable for only PG course",
-  
-    heroPoints: [
+
+  heroPoints: [
     "Practice-oriented business education",
     "Experienced faculty & industry experts",
     "Industry-aligned curriculum",
