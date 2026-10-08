@@ -49,18 +49,20 @@ const CONTENT = {
   phone: "+91-8956374111",
   phoneHref: "tel:+918956374111",
   heroTag: "Admissions Open 2026–27",
-  heroTitle: "Start Your Creative Journey at Sandip University School of Commerce & Management Studies",
+  heroTitle: "From Classroom to Corporate Leadership",
   heroSub:
-    "Industry-connected business education where you learn by doing — from commerce and finance to management, entrepreneurship, business strategy, and professional practice.",
-  heroPoints: [
-    "Hands-on studio learning",
-    "Experienced faculty mentors",
+    "Applications Invited for SU-MAT 2027",
+  para: "Applicable for only PG course",
+  
+    heroPoints: [
+    "Practice-oriented business education",
+    "Experienced faculty & industry experts",
     "Industry-aligned curriculum",
-    "Modern campus & design labs",
+    "Leadership & entrepreneurial development",
   ],
   datNotice: {
     titlee: "1st Phase Examination",
-    title: "Applications Invited for SU-DAT 2027",
+    title: "",
     lastDateLabel: "Last Date to Apply",
     lastDate: "28 Jan 2027",
     examLabel: "SU-DAT Exam",
@@ -667,11 +669,14 @@ function Hero() {
           >
             {CONTENT.heroTag}
           </span>
-          <h1 style={{ margin: "20px 0 0", fontSize: sm ? 48 : 36, fontWeight: 800, lineHeight: 1.15 }}>
+          <h1 style={{ margin: "20px 0 0", fontSize: sm ? 48 : 36, fontWeight: 700, lineHeight: 1.15 }}>
             {CONTENT.heroTitle}
           </h1>
-          <p style={{ margin: "16px 0 0", maxWidth: 576, fontSize: 18, lineHeight: 1.6, color: C.blue100 }}>
+          <h5 style={{ margin: "16px 0 0", maxWidth: 576, fontSize: 18, lineHeight: 1.6, color: "#fff" }}>
             {CONTENT.heroSub}
+          </h5>
+          <p style={{ margin: "16px 0 0", maxWidth: 576, fontSize: 15, lineHeight: 1.6, color: C.blue100 }}>
+            {CONTENT.para}
           </p>
           <div
             style={{
@@ -702,10 +707,10 @@ function Hero() {
               }}
             >
               <div>
-                <div style={{ fontSize: 12, textTransform: "uppercase", letterSpacing: "0.08em", color: C.blue100 }}>
+                <div style={{ fontSize: 14, textTransform: "uppercase", letterSpacing: "0.08em", color: "red", fontWeight: 700, marginBottom: 4 }}>
                   {CONTENT.datNotice.lastDateLabel}
                 </div>
-                <div style={{ fontSize: 18, fontWeight: 700 }}>{CONTENT.datNotice.lastDate}</div>
+                <div style={{ fontSize: 16, fontWeight: 700 }}>{CONTENT.datNotice.lastDate}</div>
               </div>
 
               <div
@@ -718,10 +723,10 @@ function Hero() {
               />
 
               <div>
-                <div style={{ fontSize: 12, textTransform: "uppercase", letterSpacing: "0.08em", color: C.blue100 }}>
+                <div style={{ fontSize: 14, textTransform: "uppercase", letterSpacing: "0.08em", color: "red", fontWeight: 700, marginBottom: 4 }}>
                   {CONTENT.datNotice.examLabel}
                 </div>
-                <div style={{ fontSize: 18, fontWeight: 700 }}>{CONTENT.datNotice.examDate}</div>
+                <div style={{ fontSize: 16, fontWeight: 700 }}>{CONTENT.datNotice.examDate}</div>
               </div>
             </div>
           </div>
